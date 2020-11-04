@@ -1,10 +1,13 @@
 import React from 'react';
+import CustomLayout from "./Layout";
+import 'antd/dist/antd.css';
+
 
 const App = () => {
   return (
-    <div>
-
-    </div>
+    <>
+      <CustomLayout />
+    </>
   );
 };
 
