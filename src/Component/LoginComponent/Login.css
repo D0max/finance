@@ -1,0 +1,13 @@
+.site-card-border-less-wrapper {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.card-login {
+    width: 400px;
+}
+
+.auth-title {
+    text-align: center;
+}
