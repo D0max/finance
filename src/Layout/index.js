@@ -5,7 +5,7 @@ import Login from "../Container/Login";
 
 const CustomLayout = () => {
   return (
-    <Layout.Content theme="dark">
+    <Layout.Content>
       <BrowserRouter>
         <Switch>
           <Route exact path='/login' component={Login}/>
