@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout } from "antd";
-import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import Login from "../Container/Login";
 import Graphic from "../Container/Graphic";
 

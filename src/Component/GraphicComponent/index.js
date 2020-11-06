@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Chart from 'react-apexcharts'
+import Chart from 'react-apexcharts';
 
 const GraphicComponent = ({optionsMixedChart, seriesMixedChart}) => {
   return (

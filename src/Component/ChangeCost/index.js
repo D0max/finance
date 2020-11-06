@@ -3,9 +3,9 @@ import { Select } from "antd";
 
 const ChangeCost = (props) => {
   const handleChange = (event) => {
-    console.log(event)
     props.chengeHandler(event)
   }
+
   return (
     <Select defaultValue={props.symbol} style={{ width: 120 }} onChange={handleChange}>
       <Select.Option value="RUB">RUBLE</Select.Option>

@@ -13,15 +13,15 @@ class Graphic extends Component {
     days: []
   }
   componentDidMount() {
-    this.props.fetchCost(this.state.base, this.state.symbol)
+    this.props.fetchCost(this.state.base, this.state.symbol);
   }
 
   changeSymbol = (coin) => {
-    this.setState({...this.state, symbol: coin}, () => this.props.fetchCost(this.state.base, this.state.symbol))
+    this.setState({...this.state, symbol: coin}, () => this.props.fetchCost(this.state.base, this.state.symbol));
   }
 
   changeBase = (coin) => {
-    this.setState({...this.state, base: coin}, () => this.props.fetchCost(this.state.base, this.state.symbol))
+    this.setState({...this.state, base: coin}, () => this.props.fetchCost(this.state.base, this.state.symbol));
   }
 
   render() {

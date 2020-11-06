@@ -4,24 +4,24 @@ import { Card, Input, Typography, Row, Col, Button, Form, notification } from "a
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 
 
-import './Login.css'
+import './Login.css';
 
-const { Title } = Typography
+const { Title } = Typography;
 
 const Index = (props) => {
-  const history = useHistory()
+  const history = useHistory();
   const InputRef = useRef(null);
 
   useEffect(() => {
-    InputRef.current.focus()
+    InputRef.current.focus();
   }, []);
 
   const onFinish = (values) => {
-    props.loadData(values)
+    props.loadData(values);
     notification.success({
       message: 'You are successfully logged in'
-    })
-    history.push('/')
+    });
+    history.push('/');
   };
 
   return (

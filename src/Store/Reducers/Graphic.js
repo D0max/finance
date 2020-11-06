@@ -19,7 +19,7 @@ const initialState = {
     },
   ],
   failure: ''
-}
+};
 
 const reducer = (state = initialState, action ) => {
 
