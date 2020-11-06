@@ -1,4 +1,5 @@
 import React, {useRef, useEffect} from 'react';
+import { useHistory } from "react-router-dom";
 import { Card, Input, Typography, Row, Col, Button, Form, notification } from "antd";
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 
@@ -8,6 +9,7 @@ import './Login.css'
 const { Title } = Typography
 
 const Index = (props) => {
+  const history = useHistory()
   const InputRef = useRef(null);
 
   useEffect(() => {
@@ -19,6 +21,7 @@ const Index = (props) => {
     notification.success({
       message: 'You are successfully logged in'
     })
+    history.push('/')
   };
 
   return (
