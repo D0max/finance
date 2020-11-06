@@ -37,7 +37,7 @@ const reducer = (state = initialState, action ) => {
             }
           },
           xaxis: {
-            categories: action.payload.labels
+            categories: action.payload.labels.sort()
           },
         },
         seriesMixedChart: [
